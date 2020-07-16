@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+/* ------------------------------------------------------------------------ */
+
+/*  Reset
+
+/* ------------------------------------------------------------------------ */
+
+.deco {
+    position: absolute;
+    z-index: 1;
+}
+
+.deco_bubble01 {
+    width: 208px;
+    height: 208px;
+    background: rgba(227, 175, 203, 0.7);
+    background-color: rgba(227, 175, 203, 0.7);
+    top: 190px;
+    left: 50px;
+}
+.deco_bubble02 {
+    width: 148px;
+    height: 148px;
+    background: rgba(125, 193, 219, 0.7);
+    background-color: rgba(125, 193, 219, 0.7);
+    top: 250px;
+    right: 50px;
+}
+
+#area01{
+  position: relative;
+  height: calc(100vh - 90px);
+  border: 10px solid rgba(227, 175, 203, 0.7);
+  border-radius:5px; 
+  box-sizing: border-box;
+  margin: 45px;
+}
+#area01 h1{
+  
+}
+
+
