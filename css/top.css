@@ -28,6 +28,8 @@
     right: 50px;
 }
 
+/*TOP*/
+
 #area01{
   position: relative;
   height: calc(100vh - 90px);
@@ -36,8 +38,18 @@
   box-sizing: border-box;
   margin: 45px;
 }
-#area01 h1{
-  
+
+#area01 .name_area{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #E1E1E1;
 }
 
+  #area01 .name_area h1{
+    font-size: 5rem;
+    letter-spacing: 10px;
+    text-shadow: 5px 5px #a2a2a2;
+  }
 
