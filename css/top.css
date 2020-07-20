@@ -16,16 +16,25 @@
     height: 208px;
     background: rgba(227, 175, 203, 0.7);
     background-color: rgba(227, 175, 203, 0.7);
-    top: 190px;
-    left: 50px;
+    top: 100px;
+    left: 60px;
 }
 .deco_bubble02 {
-    width: 148px;
-    height: 148px;
-    background: rgba(125, 193, 219, 0.7);
-    background-color: rgba(125, 193, 219, 0.7);
+    width: 120px;
+    height: 120px;
+    background: rgba(182, 203, 226, 0.7);
+    background-color: rgba(182, 203, 226, 0.7);
     top: 250px;
     right: 50px;
+}
+
+.deco_bubble03 {
+    width: 120px;
+    height: 120px;
+    background: rgba(182, 203, 226, 0.7);
+    background-color: rgba(182, 203, 226, 0.7);
+    top: 290px;
+    left: 310px;
 }
 
 /*TOP*/
@@ -44,12 +53,24 @@
   top:50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  color: #E1E1E1;
+  z-index: 2;  
 }
-
   #area01 .name_area h1{
-    font-size: 5rem;
+    font-size: 7rem;
     letter-spacing: 10px;
-
+    color: #FFF;
+    text-shadow    : 
+       1px  1px 0px #5b5b5b,
+      -1px  1px 0px #5b5b5b,
+       1px -1px 0px #5b5b5b,
+      -1px -1px 0px #5b5b5b,
+       1px  0px 0px #5b5b5b,
+       0px  1px 0px #5b5b5b,
+      -1px  0px 0px #5b5b5b,
+       0px -1px 0px #5b5b5b;  
+    }
+  #area01 .name_area p{
+    font-size: 2.4rem;
+    color: #5b5b5b;
   }
 

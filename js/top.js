@@ -58,7 +58,7 @@ $(function() {
 			numVert: 6, //円の粒度
       spring: 0.005,  //バネ運動の動作数値
       friction: 0.90, //摩擦運動の動作数値
-      radius: 80, //Canvasの表示半径
+      radius: 110, //Canvasの表示半径
       fps: 45
 		});
 
@@ -66,16 +66,16 @@ $(function() {
 			numVert: 6,
 			spring: 0.005,
 			friction: 0.9,
-			radius: 60,
+			radius: 50,
 			fps: 45
 		});
 
 		$bubble03.morphing({
-			numVert: 20,
-			spring: 0.01,
+			numVert: 6,
+			spring: 0.005,
 			friction: 0.9,
-			radius: 85,
-			fps: 90
+			radius: 50,
+			fps: 45
 		});
 
 		$bubble04.morphing({
