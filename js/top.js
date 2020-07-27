@@ -163,7 +163,7 @@ $(function() {
 
 var options = {
   scaleColor: false,
-  trackColor: '#E5E5E5',
+  trackColor: '#e8e8e8',
   barColor: '#ebc7da',
   lineWidth: 6,
   lineCap: 'butt',
