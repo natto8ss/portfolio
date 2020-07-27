@@ -14,7 +14,7 @@
 .deco_bubble01 {
     width: 208px;
     height: 208px;
-    background: rgba(227, 175, 203, 0.7);
+    background: #ec80b9;
     background-color: rgba(227, 175, 203, 0.7);
     top: 6%;
     left: 6%;
@@ -118,4 +118,31 @@
   border: 5px solid rgba(227, 175, 203, 0.7);
 }
 }
+
+/*chart*/
+ul.chart_area{
+  margin-bottom: 4em;
+}
+
+.chart_area .chart{
+  display: inline-block;
+  width: 95px;
+  height: 95px;
+  margin: 0 10px;
+  vertical-align: top;
+  position: relative;
+ box-sizing:border-box;
+  padding-top: 26px;
+}
+  .chart_area span{
+    display: block;
+    font-size: 2em;
+    font-weight: normal;
+  }
+
+  .chart_area canvas{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 
