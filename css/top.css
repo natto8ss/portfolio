@@ -36,6 +36,15 @@
     top: 30%;
     left: 20%;
 }
+.deco_bubble04 {
+  width: 208px;
+  height: 208px;
+  background: #ec80b9;
+  background-color: rgba(227, 175, 203, 0.7);
+  top: 40%;
+  right: 10%;
+}
+
 
 /*TOP*/
 
@@ -57,6 +66,7 @@
 }
   #area01 .name_area h1{
     font-size: 9rem;
+    line-height: 1;
     letter-spacing: 10px;
     background: #e3afcb;
     background: -moz-linear-gradient(left, #ffffff 0%, #e3afcb 100%);
@@ -71,10 +81,6 @@
     color: transparent;
     transition: 0.4s;
     cursor: default;
-    }
-
-   #area01 .name_area h1:hover {
-     background: #FFF;
     }
 
 @keyframes title{
@@ -119,25 +125,77 @@
 }
 }
 
-/*chart*/
-ul.chart_area{
-  margin-bottom: 4em;
+
+/*ABOUT*/
+
+#area02{
+  background:rgba(227, 175, 203, 0.2); 
+}
+
+section{
+  padding: 2.5%;
+}
+
+section#area02 h2{
+  font-size: 8rem;
+  margin-bottom: 35px;
+  color: #FFF;
+  -webkit-text-stroke: 0.5px #5b5b5b;
+  text-stroke: 0.5px #5b5b5b;
+}
+
+#area02 .profile{
+  max-width: 420px;
+  margin: 25px auto;
+}
+
+#area02 .profile h3{
+  font-size: 3rem;
+}
+
+#area02 .profile p{
+  line-height: 2;
+}
+
+.circle{
+  background-image:url(../img/img_about.jpg);  /* 画像のURLを指定       */
+    background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
+    background-position:0px center;                     /* 画像の表示位置を指定  */
+    background-size:cover;  
+    border-radius: 50%;                             /* 画像のサイズを指定    */
+    width:250px;                                            /* 横幅のサイズを指定    */
+    height:250px;
+    margin: 0 auto;
+}
+
+/*skill*/
+section#area03 h2{
+  font-size: 8rem;
+  margin-bottom: 35px;
+  color: rgba(227, 175, 203, 0.7);
+  -webkit-text-stroke: 0.5px #5b5b5b;
+  text-stroke: 0.5px #5b5b5b;
 }
 
 .chart_area .chart{
   display: inline-block;
-  width: 95px;
-  height: 95px;
-  margin: 0 10px;
+  width: 150px;
+  height: 150px;
+  margin: 0 30px 75px;
   vertical-align: top;
   position: relative;
  box-sizing:border-box;
-  padding-top: 26px;
+  padding-top: 45px;
 }
   .chart_area span{
     display: block;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: normal;
+  }
+
+  .chart_area span.text{
+    font-size: 2em;
+    margin-top: 40px;
   }
 
   .chart_area canvas{
@@ -145,4 +203,18 @@ ul.chart_area{
     left: 0;
     top: 0;
   }
+
+
+@media (max-width: 768px) {
+  ul.chart_area{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+  }
+  .chart_area .chart{
+    margin: 0 20px 75px;
+    padding-top: 43px;
+  }
+
+}
 
