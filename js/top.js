@@ -79,11 +79,11 @@ $(function() {
 		});
 
 		$bubble04.morphing({
-			numVert: 20,
+			numVert: 6,
 			spring: 0.01,
 			friction: 0.9,
-			radius: 55,
-			fps: 90
+			radius: 110,
+			fps: 45
 		});
 
 		$bubble05.morphing({
@@ -167,8 +167,10 @@ var options = {
   barColor: '#ebc7da',
   lineWidth: 6,
   lineCap: 'butt',
-  size: 95
+  size: 150
 };
+
+
 
 window.addEventListener('DOMContentLoaded', function() {
   var charts = [];
@@ -177,4 +179,5 @@ window.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
+//inview
+$(function() { $('.inviewbox').css('opacity', 0); $('.inviewbox').on('inview', function(event, isInView, visiblePartX, visiblePartY) { if (isInView) { $(this).stop().animate({opacity: 1}, 1400); } }); });

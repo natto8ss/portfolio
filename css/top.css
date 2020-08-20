@@ -1,11 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
-/* ------------------------------------------------------------------------ */
 
-/*  Reset
 
-/* ------------------------------------------------------------------------ */
 
+/*メイン*/
 .deco {
     position: absolute;
     z-index: 1;
@@ -24,7 +22,7 @@
     height: 120px;
     background: rgba(182, 203, 226, 0.7);
     background-color: rgba(182, 203, 226, 0.7);
-    top: 20%;
+    top: 50%;
     right: 5%;
 }
 
@@ -36,6 +34,31 @@
     top: 30%;
     left: 20%;
 }
+.deco_bubble04 {
+  width: 208px;
+  height: 208px;
+  background: #ec80b9;
+  background-color: rgba(227, 175, 203, 0.7);
+  top: 70%;
+  right: 10%;
+}
+
+@media (max-width: 768px) {
+  .deco_bubble01 {
+    top:3%;
+  }
+  .deco_bubble02 {
+    top:10%;
+  }
+  .deco_bubble03 {
+    top:60%;
+    left: 10%;
+  }
+  .deco_bubble04 {
+    top:65%;
+  }
+}
+
 
 /*TOP*/
 
@@ -56,7 +79,8 @@
   z-index: 2;  
 }
   #area01 .name_area h1{
-    font-size: 7rem;
+    font-size: 9rem;
+    line-height: 1;
     letter-spacing: 10px;
     background: #e3afcb;
     background: -moz-linear-gradient(left, #ffffff 0%, #e3afcb 100%);
@@ -71,10 +95,6 @@
     color: transparent;
     transition: 0.4s;
     cursor: default;
-    }
-
-   #area01 .name_area h1:hover {
-     background: #FFF;
     }
 
 @keyframes title{
@@ -119,30 +139,271 @@
 }
 }
 
-/*chart*/
-ul.chart_area{
-  margin-bottom: 4em;
+
+/*ABOUT*/
+
+#area02{
+  background:rgba(227, 175, 203, 0.2); 
+}
+
+section{
+  padding: 2.5%;
+}
+
+section#area02 h2{
+  font-size: 8rem;
+  margin-bottom: 35px;
+  color: #FFF;
+  -webkit-text-stroke: 0.5px #5b5b5b;
+  text-stroke: 0.5px #5b5b5b;
+}
+
+#area02 .profile{
+  max-width: 980px;
+  margin: 25px auto;
+}
+
+#area02 .profile h3{
+  font-size: 3rem;
+}
+
+#area02 .profile p{
+  line-height: 2;
+}
+
+.circle{
+  background-image:url(../img/img_about.jpg);  /* 画像のURLを指定       */
+    background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
+    background-position:0px center;                     /* 画像の表示位置を指定  */
+    background-size:cover;  
+    border-radius: 50%;                             /* 画像のサイズを指定    */
+    width:250px;                                            /* 横幅のサイズを指定    */
+    height:250px;
+    margin: 0 auto;
+}
+
+/*skill*/
+section#area03 h2{
+  font-size: 8rem;
+  margin-bottom: 35px;
+  color: rgba(227, 175, 203, 0.7);
+  -webkit-text-stroke: 0.5px #5b5b5b;
+  text-stroke: 0.5px #5b5b5b;
 }
 
 .chart_area .chart{
   display: inline-block;
-  width: 95px;
-  height: 95px;
-  margin: 0 10px;
+  width: 150px;
+  height: 150px;
+  margin: 0 30px 75px;
   vertical-align: top;
   position: relative;
  box-sizing:border-box;
-  padding-top: 26px;
+  padding-top: 45px;
+  pointer-events: auto;
+  position: relative;
 }
   .chart_area span{
     display: block;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: normal;
+  }
+
+  .chart_area span.text{
+    font-size: 2em;
+    margin-top: 40px;
   }
 
   .chart_area canvas{
     position: absolute;
     left: 0;
     top: 0;
+    pointer-events: auto;
   }
+
+  .cmt{
+    opacity: 0;
+  }
+
+  .chart_area li:hover .cmt{
+    cursor: pointer;
+    opacity: 1;
+    background: rgba(255,255,255,0.9);
+    border: 1px solid #c2bfbf;
+    width: 200px;
+    font-size: 1.6rem!important;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: left;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+  }
+
+  .chart_area li:hover .cmt:after{
+    border: solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    position:absolute;
+    border-color: rgba(0, 153, 255, 0);
+    border-top-width:10px;
+    border-bottom-width:10px;
+    border-left-width:12px;
+    border-right-width:10px;
+    margin-left: -10px;
+    border-top-color:rgba(255,255,255,1);
+    top:100%;
+    left:50%;
+}
+.chart_area li:hover .cmt:before{
+  border: solid transparent;
+  content:'';
+  height:0;
+  width:0;
+  position:absolute;
+  border-color: rgba(0, 153, 255, 0);
+  border-top-width:12px;
+  border-bottom-width:10px;
+  border-left-width:12px;
+  border-right-width:12px;
+  margin-left: -11px;
+  border-top-color:#c2bfbf;
+  top:100%;
+  left:50%;
+}
+
+  .chart a:hover{
+    text-decoration: none;
+    cursor: default;
+  }
+
+
+
+@media (max-width: 768px) {
+  section{
+    padding: 5%;
+  }
+  ul.chart_area{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+  }
+  .chart_area .chart{
+    margin: 0 0px 75px;
+    padding-top: 43px;
+  }
+
+}
+
+/*works*/
+
+section#area04{
+  background: rgba(182, 203, 226, 0.7);
+}
+
+section#area04 h2{
+  font-size: 8rem;
+  margin-bottom: 35px;
+  color: #FFF;
+  -webkit-text-stroke: 0.5px #5b5b5b;
+  text-stroke: 0.5px #5b5b5b;
+}
+
+ul.work_area{
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ul.work_area figure{
+  background: #FFF;
+  width: 100%;
+}
+
+  ul.work_area li{
+    width: calc((100% - 40px)/3);
+    margin-right: 20px;
+  }
+
+  @media all and (-ms-high-contrast: none) {
+    ul.work_area li{
+      width: 27%;
+    }
+  }
+
+  ul.work_area li:nth-child(3n){
+    margin-right: 0px;
+  }
+
+  ul.work_area li a{
+    display: inline-block;
+    transition: .8s ease;
+  }
+
+  ul.work_area li a figure{
+    background: #FFF;
+    padding: 5px;
+    transition: .8s ease;
+    box-sizing: border-box;
+  }
+
+  ul.work_area li a:hover figure{
+    opacity: 0.6;
+  }
+
+  ul.work_area li a:hover p{
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  ul.work_area li p{
+    margin: 5% 0;
+    color: #5b5b5b;
+  }
+  @media (max-width: 768px) {
+    ul.work_area li{
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+/*contact*/
+section#area05{
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+section#area05 h2{
+  font-size: 8rem;
+  margin-bottom: 35px;
+  color: rgba(227, 175, 203, 0.7);
+  -webkit-text-stroke: 0.5px #5b5b5b;
+  text-stroke: 0.5px #5b5b5b;
+}
+
+section#area05 a{
+  background:rgba(232,232,232,1) ;
+  color: #5a5a5a;
+  padding: 20px 2% 15px;
+  border-radius: 30px;
+  display: block;
+  margin: 35px auto;
+  font-size: 2rem;
+  max-width: 350px;
+  border: 0.5px solid #bfbfbf;
+  transition: .8s ease;
+}
+
+section#area05 a:hover{
+  text-decoration: none;
+  border: 0.5px solid rgba(232,232,232,0.7);
+  opacity: 0.6;
+}
 

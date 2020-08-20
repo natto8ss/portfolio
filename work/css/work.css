@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*navigation*/
+header {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  padding: 10px;
+  z-index: 100;
+}
+
+#nav{
+  text-align: left;
+  background: rgba(255,255,255,0.8);
+  padding: 20px;
+}
+
+
+
+/*contents*/
+#work_area{
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 35px 0;
+}
+
+#work_area h1{
+  font-size: 8rem;
+  color: rgba(227, 175, 203, 0.7);;
+  -webkit-text-stroke: 0.5px #5b5b5b;
+  text-stroke: 0.5px #5b5b5b;
+}
+
+#work_area h2{
+  font-size: 2rem;
+}
+
+figure{
+  width: 100%;
+}
+
+figure:nth-last-child(2){
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.work_detail{
+  width: 100%;
+  margin: 100px auto;
+  text-align: left;
+}
+
+.work_detail dt,.work_detail dd{
+  padding: 10px 0;
+}
+
+.work_detail dt{
+  float: left;
+  width: 200px;
+  opacity: 0.6;
+}
+
+.work_detail dd{
+  width: calc(100% - 200px);
+  margin-left: 200px;
+}
+
+
+@media (max-width: 768px) {
+
+  #work_area{
+    margin: 0 auto;
+    padding: 0 5%;
+    box-sizing: border-box;
+  }
+
+  .work_detail dt,.work_detail dd{
+    width: 100%!important;
+    margin-left: 0;
+  }
+}
+
+

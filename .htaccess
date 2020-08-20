@@ -1,0 +1,8 @@
+AuthType Basic
+AuthName "Input your ID and Password."
+AuthUserFile /home/users/1/kikirara.jp-erinatto/web/portfolio/.htpasswd
+require valid-user
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
