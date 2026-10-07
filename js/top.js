@@ -170,6 +170,8 @@ var options = {
   size: 150
 };
 
+
+
 window.addEventListener('DOMContentLoaded', function() {
   var charts = [];
   [].forEach.call(document.querySelectorAll('.chart'),  function(el) {
@@ -177,4 +179,5 @@ window.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
+//inview
+$(function() { $('.inviewbox').css('opacity', 0); $('.inviewbox').on('inview', function(event, isInView, visiblePartX, visiblePartY) { if (isInView) { $(this).stop().animate({opacity: 1}, 1400); } }); });
